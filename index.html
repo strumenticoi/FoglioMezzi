@@ -1,0 +1,2417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foglio Mezzi</title>
+    <meta name="description" content="insert description">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+
+    <link rel="icon"
+        href="data:image/png;base64,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"
+        size="64x64">
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            caret-color: black;
+            cursor: var(--cursor), default;
+        }
+
+        .delius-regular {
+            font-family: "Delius", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        :root {
+            --cursor: url("data:image/x-icon;base64,AAACAAEAICAAAAAAAACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAgBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+AAID/cQBx/x4AHvUAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/3EAcf8eAB71AAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/HgAe9QAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABcAF9oAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA///////////////////////////////////////////////////////////////////////////////////////////7////MP///wD///8A////Af///wA///8AP///AH///wD///8B////A////wf///8P////H////z////8=");
+            --alertColour: #FF7417;
+            --gray: gray;
+            --darkslate: darkslateblue;
+            --newColor: #79717a;
+            --one: #94dbb5;
+            --two: #89a9db;
+            --three: #fbf195;
+            --four: #948bf5;
+            --five: #ea6a7a;
+            --six: #f3b9ed;
+            --black: #222;
+            --white: #fafafa;
+        }
+
+        /* Works on Chrome, Edge, and Safari */
+        *::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        *::-webkit-scrollbar-track {
+            background: aliceblue;
+        }
+
+        *::-webkit-scrollbar-thumb {
+            background-color: var(--alertColour);
+            border-radius: 20px;
+            border: 3px solid aliceblue;
+        }
+
+        body {
+            padding: 0.1em 0.8em;
+            background-color: var(--white);
+        }
+
+        textarea::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        textarea::-webkit-scrollbar-track {
+            background: aliceblue;
+        }
+
+        textarea::-webkit-scrollbar-thumb {
+            background-color: var(--alertColour);
+            border-radius: 20px;
+            border: 3px solid aliceblue;
+        }
+
+        ::selection {
+            background: var(--alertColour);
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        /* Style the grid container */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-gap: 2px;
+            margin-bottom: 20px;
+        }
+
+
+        select.option3 {
+            color: #222 !important;
+        }
+
+
+        select option[value="1"] {
+            background: var(--one);
+        }
+
+        select option[value="2"] {
+            background: var(--two);
+        }
+
+        select option[value="3"] {
+            background: var(--three);
+        }
+
+        select option[value="4"] {
+            background: var(--four);
+        }
+
+        select option[value="5"] {
+            background: var(--five);
+        }
+
+        select option[value="6"] {
+            background: var(--six);
+        }
+
+        select option[value="7"] {
+            background: var(--white);
+        }
+
+
+
+
+        .orario {
+            resize: none;
+            text-align: center;
+            border: 0 solid var(--black);
+            font-weight: bold;
+            font-style: italic;
+            width: 100%;
+            font-size: clamp(0.5rem, 1.5vw, 1rem);
+            overflow: hidden;
+        }
+
+        .selettiva {
+            position: relative;
+            border: 1px solid var(--black);
+            font-size: clamp(1.2rem, 2vw, 2rem);
+            resize: none;
+            text-transform: uppercase;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            overflow: hidden;
+            box-shadow: 0 0 5px #719ECE;
+            background-color: whitesmoke;
+            width: 100%;
+        }
+
+        /*
+            background-image: url('data:image/svg+xml,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%222%200%20500%20500%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20preserveAspectRatio%3D%22xMidYMid%20meet%22%20class%3D%22iconify%20iconify--fxemoji%22%20role%3D%22img%22%20aria-hidden%3D%22true%22%3E%3Cg%3E%3Cpath%20id%3D%22svg_1%22%20d%3D%22m245.313%2C85.704l-46.952%2C0a7.2%2C7.2%200%200%200%20-7.2%2C7.2l0%2C43.293a7.2%2C7.2%200%200%200%207.2%2C7.2l46.952%2C0l0%2C-57.693z%22%20fill%3D%22%23FF473E%22/%3E%3Cpath%20id%3D%22svg_2%22%20d%3D%22m244.751%2C143.242l44.637%2C0a7.2%2C7.2%200%200%200%207.2%2C-7.2l0%2C-42.983a7.2%2C7.2%200%200%200%20-7.2%2C-7.2l-44.637%2C0l0%2C57.383z%22%20fill%3D%22%2365BBF2%22/%3E%3Cpath%20id%3D%22svg_3%22%20d%3D%22m10.391%2C378.041l0%2C-113.86c0%2C-13.343%208.218%2C-25.672%2021.556%2C-32.339l25.547%2C-12.771a42.959%2C42.959%200%200%200%209.058%2C-6.046l91.506%2C-79.928c5.485%2C-5.431%2013.408%2C-8.547%2021.737%2C-8.547l280.448%2C0c23.797%2C0%2043.089%2C16.716%2043.089%2C37.335l0%2C216.155c0%2C20.62%20-19.292%2C37.335%20-43.089%2C37.335l-406.763%2C0c-23.797%2C0.001%20-43.089%2C-16.714%20-43.089%2C-37.334z%22%20fill%3D%22%23DEE1E2%22/%3E%3Cpath%20id%3D%22svg_4%22%20d%3D%22m49.653%2C414.451c0%2C-33.938%2027.513%2C-61.451%2061.451%2C-61.451s61.451%2C27.513%2061.451%2C61.451m277.991%2C0c0%2C-33.938%20-27.513%2C-61.451%20-61.451%2C-61.451s-61.451%2C27.513%20-61.451%2C61.451%22%20fill%3D%22%239BA5A8%22/%3E%3Cpath%20id%3D%22svg_5%22%20d%3D%22m155.983%2C414.451c0%2C24.786%20-20.093%2C44.879%20-44.879%2C44.879s-44.879%2C-20.093%20-44.879%2C-44.879c0%2C-24.786%2020.093%2C-44.879%2044.879%2C-44.879s44.879%2C20.093%2044.879%2C44.879zm233.112%2C-44.879c-24.786%2C0%20-44.879%2C20.093%20-44.879%2C44.879c0%2C24.786%2020.093%2C44.879%2044.879%2C44.879c24.786%2C0%2044.879%2C-20.093%2044.879%2C-44.879c0%2C-24.786%20-20.093%2C-44.879%20-44.879%2C-44.879z%22%20fill%3D%22%232B3B47%22/%3E%3Cpath%20id%3D%22svg_6%22%20d%3D%22m177.236%2C154.656l57.391%2C0a7.586%2C7.586%200%200%201%207.586%2C7.586l0%2C67.609a7.586%2C7.586%200%200%201%20-7.586%2C7.586l-128.139%2C0c-6.842%2C0%20-10.188%2C-8.344%20-5.241%2C-13.071l70.748%2C-67.609a7.589%2C7.589%200%200%201%205.241%2C-2.101z%22%20fill%3D%22%2300B1FF%22/%3E%3Cpath%20id%3D%22svg_7%22%20d%3D%22m440.326%2C193.702l0%2C33.618a2.16%2C2.16%200%200%201%20-2.16%2C2.16l-32.072%2C0l0%2C32.072a2.16%2C2.16%200%200%201%20-2.16%2C2.16l-33.618%2C0a2.16%2C2.16%200%200%201%20-2.16%2C-2.16l0%2C-32.072l-32.072%2C0a2.16%2C2.16%200%200%201%20-2.16%2C-2.16l0%2C-33.618a2.16%2C2.16%200%200%201%202.16%2C-2.16l32.072%2C0l0%2C-32.072a2.16%2C2.16%200%200%201%202.16%2C-2.16l33.618%2C0a2.16%2C2.16%200%200%201%202.16%2C2.16l0%2C32.072l32.072%2C0a2.16%2C2.16%200%200%201%202.16%2C2.16zm63.007%2C109.79l-492.942%2C0l0%2C39.617l492.942%2C0l0%2C-39.617z%22%20fill%3D%22%23FF473E%22/%3E%3Cpath%20id%3D%22svg_8%22%20d%3D%22m131.555%2C414.451c0%2C11.295%20-9.156%2C20.451%20-20.451%2C20.451s-20.451%2C-9.156%20-20.451%2C-20.451s9.156%2C-20.451%2020.451%2C-20.451s20.451%2C9.156%2020.451%2C20.451zm257.54%2C-20.451c-11.295%2C0%20-20.451%2C9.156%20-20.451%2C20.451s9.156%2C20.451%2020.451%2C20.451s20.451%2C-9.156%2020.451%2C-20.451s-9.156%2C-20.451%20-20.451%2C-20.451z%22%20fill%3D%22%239BA5A8%22/%3E%3C/g%3E%3C/svg%3E');
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: 20px 20px;
+        */
+
+
+        select {
+            white-space: pre-wrap;
+            width: 100%;
+            font-size: clamp(0.5rem, 2vw, 1rem);
+        }
+
+        .stati {
+            overflow: auto;
+            text-align: center;
+            box-shadow: 0.5px 0 0 0.5px #719ECE;
+            width: 100%;
+            background-color: whitesmoke;
+            border: 1px solid var(--black);
+            border-top: none;
+            box-shadow: 1.4px 1.4px 1.4px #818181;
+            padding-bottom: 2px;
+            margin-bottom: 2px;
+            margin-top: -5px;
+            font-size: clamp(0.5rem, 2vw, 2rem);
+            border-radius: 0;
+            color: #222;
+        }
+
+        .select_stati {
+            overflow: auto;
+            text-align: center;
+            box-shadow: 0 0 6px aliceblue;
+            width: 100%;
+            border: 1px solid var(--black);
+            border-bottom: 0px solid transparent;
+            padding-bottom: 2px;
+            margin-bottom: 2px;
+            box-shadow: 1px 1px 1px #818181;
+            font-size: clamp(0.5rem, 2vw, 2rem);
+            outline: 0px;
+        }
+
+
+        .appunti,
+        .altriAppunti,
+        .extraNotes {
+            border: 1px solid var(--black);
+            resize: none;
+            text-transform: uppercase;
+            color: var(--black);
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+            font-size: clamp(0.5rem, 1.5vw, 2rem);
+        }
+
+        #table-1,
+        #table-2 {
+            position: relative;
+        }
+
+        #toggleRowtable-1,
+        #toggleRowtable-2 {
+            position: absolute;
+            top: 81%;
+            left: -23px;
+            width: fit-content;
+            height: 40px;
+            border: none;
+            background-color: transparent;
+            color: var(--black);
+            font-weight: bold;
+            font-size: 2rem;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            cursor: pointer;
+            z-index: 1;
+            display: none;
+        }
+
+        textarea {
+            overflow-y: scroll;
+            overflow: auto;
+            border-radius: 5px;
+            resize: none;
+        }
+
+        textarea::placeholder {
+            opacity: 0.25;
+            position: relative;
+            line-height: 95%;
+            padding: 1px 1px;
+        }
+
+        .selettiva::placeholder {
+            opacity: 0.1;
+            text-transform: lowercase;
+        }
+
+        #noteInterne {
+            width: 100%;
+            height: 100%;
+            margin-top: 4px;
+            margin-bottom: 12px;
+            padding: 0 1.5em;
+            padding-top: 1.5em;
+            border: 2px solid var(--black);
+            background-color: var(--white);
+            font-size: clamp(1rem, 2vw, 2rem);
+            background-image: -moz-linear-gradient(top, transparent, transparent 24px, #E7EFF8 0px), -moz-radial-gradient(10px 50%, circle closest-corner, #f5f5f5, #f5f5f5 39%, transparent 0%), -moz-radial-gradient(10px 46%, circle closest-corner, #CCCCCC, #CCCCCC 43.5%, transparent 0%);
+            background-image: -webkit-linear-gradient(top, transparent, transparent 24px, #E7EFF8 0), -webkit-radial-gradient(10px 50%, circle closest-corner, #f5f5f5, #f5f5f5 39%, transparent 0%), -webkit-radial-gradient(10px 46%, circle closest-corner, #cccccc, #cccccc 43.5%, transparent 0%);
+            line-height: 25px;
+            -webkit-background-size: 100% 25px;
+            background-size: 100% 25px;
+            background-repeat: repeat-y;
+        }
+
+        #noteContainer {
+            position: relative;
+            width: 100%;
+        }
+
+        #note {
+            width: 100%;
+            height: 100%;
+            background-color: var(--white);
+            font-size: clamp(1rem, 2vw, 2rem);
+            padding: 0.2em 1.5em;
+            padding-right: 7em;
+            resize: none;
+            border: 2px solid var(--black);
+            box-shadow: 1.4px 1.4px 1.4px #818181;
+            line-height: 25px;
+            width: 100%;
+            background-image: -moz-linear-gradient(top, transparent, transparent 24px, #E7EFF8 0px), -moz-radial-gradient(10px 50%, circle closest-corner, #f5f5f5, #f5f5f5 39%, transparent 0%), -moz-radial-gradient(10px 46%, circle closest-corner, #CCCCCC, #CCCCCC 43.5%, transparent 0%);
+            background-image: -webkit-linear-gradient(top, transparent, transparent 24px, #E7EFF8 0), -webkit-radial-gradient(10px 50%, circle closest-corner, #f5f5f5, #f5f5f5 39%, transparent 0%), -webkit-radial-gradient(10px 46%, circle closest-corner, #cccccc, #cccccc 43.5%, transparent 0%);
+            line-height: 25px;
+            -webkit-background-size: 100% 25px;
+            background-size: 100% 25px;
+            background-repeat: repeat-y;
+        }
+
+        #noteContainer::before {
+            content: 'Note';
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--black);
+            background-color: var(--white);
+            font-family: "Delius", cursive;
+            font-weight: bold;
+            padding: 0 0.2em;
+        }
+
+        #noteContainer:focus-within::before {
+            color: var(--alertColour) !important;
+        }
+
+        #comandi {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-between;
+            border: 1px solid #222;
+            box-shadow: 1px 1px 1px #818181;
+            width: 100%;
+            padding: 3px;
+            margin-bottom: 0.5em;
+        }
+
+        .colorpicker {
+            display: block;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            order: 2;
+        }
+
+        .colors {
+            width: 20px;
+            height: 20px;
+            border: 1px solid var(--black);
+            border-radius: 50%;
+            box-shadow: 1px 1px 1px #818181;
+        }
+
+        .colorpicker #one {
+            background-color: var(--one);
+        }
+
+        .colorpicker #two {
+            background-color: var(--two);
+        }
+
+        .colorpicker #three {
+            background-color: var(--three);
+        }
+
+        .colorpicker #four {
+            background-color: var(--four);
+        }
+
+        .colorpicker #five {
+            background-color: var(--five);
+        }
+
+        .colorpicker #zero {
+            background-color: transparent;
+        }
+
+        #clearSheet {
+            order: 4;
+            border: 1px solid var(--black);
+            box-shadow: 1.4px 1.4px 1.4px #818181;
+            padding: 2px;
+            margin-right: 1em;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 1em;
+            font-weight: bold;
+            background-color: var(--white);
+            line-height: 10px;
+        }
+
+        #printSheet {
+            position: relative;
+            order: 3;
+            background-color: transparent;
+            border: 1px solid var(--black);
+            box-shadow: 1.4px 1.4px 1.4px #818181;
+            font-weight: bold;
+            padding: 2px;
+            text-align: center;
+            border-radius: 5px;
+            line-height: 10px;
+        }
+
+        #printSheet:hover {
+            background-color: var(--alertColour);
+        }
+
+        #clearSheet:hover {
+            background-color: var(--alertColour);
+        }
+
+
+        #clearSheet:active {
+            background-color: orange
+        }
+
+        /* off-screen-menu */
+        .off-screen-menu {
+            border-radius: 5px;
+            background-color: transparent;
+            height: 100vh;
+            width: 100%;
+            max-width: 400px;
+            position: fixed;
+            top: 0;
+            left: -400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 3rem;
+            transition: .3s ease;
+            z-index: 1;
+        }
+
+        .off-screen-menu.active {
+            left: 0;
+            z-index: 2;
+        }
+
+
+        /* nav */
+        nav {
+            padding: 0.2rem;
+            display: flex;
+            z-index: 3;
+        }
+
+        /* ham menu */
+        .ham-menu {
+            height: 25px;
+            width: 20px;
+            margin-left: auto;
+            position: relative;
+            order: 1;
+        }
+
+
+        /* #svgNote {
+            position: absolute;
+            margin-bottom: 12px;
+            top: -2px;
+            left: 30px;
+            z-index: -10;
+        }
+
+        #svgSveglie {
+            position: absolute;
+            left: -120px;
+            top: -2px;
+            pointer-events: none;
+            z-index: -1;
+        } */
+
+
+        #noteLabel {
+            position: absolute;
+            left: 30px;
+            font-family: "Delius", cursive;
+            user-select: none;
+            font-weight: 600;
+            pointer-events: none;
+            transition: color 0.3s;
+        }
+
+        /*change color Note*/
+        .focused {
+            color: var(--alertColour);
+        }
+
+
+        #stampaLabel,
+        #sveglieLabel,
+        #clearLabel {
+            display: inline-block;
+            padding-bottom: 4px;
+            font-size: 0.8rem;
+        }
+
+
+        /* #stampaLabel {
+            position: absolute;
+            left: 33px;
+            margin-top: 4px;
+            font-family: "Delius", cursive;
+            pointer-events: none;
+            font-size: clamp(0.5rem, 2vw, 1rem);
+        } */
+
+
+        #menu {
+            background-color: transparent;
+            border: none;
+        }
+
+        .ham-menu span {
+            height: 3px;
+            width: 100%;
+            background-color: var(--black);
+            border-radius: 25px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            transition: .3s ease;
+        }
+
+        .ham-menu span:nth-child(1) {
+            top: 25%;
+        }
+
+        .ham-menu span:nth-child(3) {
+            top: 75%;
+        }
+
+        .ham-menu.active span {
+            background-color: var(--black);
+        }
+
+        .ham-menu.active span:nth-child(1) {
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+
+        .ham-menu.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .ham-menu.active span:nth-child(3) {
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+
+        /**********
+        * ALARMS *
+        **********/
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 20px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 5;
+        }
+
+        .modal-content {
+            position: relative;
+            display: flex;
+            gap: 0.2em;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--white);
+            margin: 5% auto;
+            padding: 2em;
+            width: fit-content;
+            border: 3px solid var(--black);
+            border-radius: 5px;
+            color: var(--black);
+            max-height: 90%;
+            max-width: 80%;
+        }
+
+        .close {
+            position: absolute;
+            color: var(--black);
+            font-size: 2rem;
+            top: 0;
+            right: 0;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: red;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+
+        #saveAlarm {
+            color: var(--black);
+            background-color: var(--white);
+            border: 2px solid var(--black);
+            padding: 0.5em;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        #saveAlarm:hover {
+            background-color: var(--black);
+            color: var(--white);
+        }
+
+        #alarmTime {
+            font-size: 1.2rem;
+            border-radius: 5px;
+            text-align: center;
+            border: 2px solid var(--black);
+            background-color: var(--white);
+            color: var(--black);
+        }
+
+        #addAlarmBtn {
+            position: relative;
+            font-size: 1.5rem;
+            line-height: 10px;
+            text-align: center;
+            border: 1px solid var(--black);
+            box-shadow: 1.4px 1.4px 1.4px #818181;
+            background-color: var(--white);
+            color: var(--black);
+            font-weight: 600;
+            border-radius: 5px;
+            padding: 2px;
+            z-index: 1;
+            cursor: pointer;
+            order: 3;
+        }
+
+        #addAlarmBtn:hover {
+            background-color: var(--alertColour);
+        }
+
+        #alarmsContainer {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding: 1em;
+        }
+
+        #firedContainer {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            width: 100%;
+            transform: translate(-50%, -50%);
+            width: auto;
+            background-color: var(--white);
+            z-index: 2;
+            border-radius: 10px;
+        }
+
+        .form-container {
+            display: grid;
+            grid-template-columns: 0.25fr 1fr;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .form-group {
+            display: contents;
+        }
+
+        label {
+            color: var(--black);
+            font-size: 1rem;
+            text-align: left;
+            align-self: center;
+        }
+
+        input[type="time"] {
+            max-width: 100px;
+            color: var(--black);
+
+        }
+
+
+
+        @keyframes blink {
+            0% {
+                background-color: var(--alertColour);
+            }
+
+            25% {
+                background-color: var(--white);
+            }
+
+            50% {
+                background-color: var(--alertColour);
+            }
+
+            75% {
+                background-color: var(--white);
+            }
+
+            100% {
+                background-color: var(--alertColour);
+            }
+        }
+
+        .blinking {
+            animation: blink 3s step-start infinite;
+        }
+
+        .secure-reminder {
+            animation: secureBlinking 4s infinite;
+        }
+
+        @keyframes secureBlinking {
+            0% {
+                background-color: rgba(126, 51, 58, 0.8);
+                color: var(--white);
+            }
+
+            50% {
+                background-color: rgba(126, 51, 58, 0.5);
+                color: var(--white);
+            }
+
+            100% {
+                background-color: rgba(126, 51, 58, 0.8);
+                color: var(--white);
+            }
+        }
+
+        .alarm {
+            position: relative;
+            height: fit-content;
+            background-color: var(--white);
+            border: 2px solid var(--black);
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            font-weight: 600;
+            align-content: stretch;
+            margin-bottom: 1px;
+            border-radius: 10px;
+            word-break: normal;
+            overflow-wrap: break-word;
+            padding: 1em;
+            opacity: 0.5;
+        }
+
+        .alarm-state {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: inline-block;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            border: 2px solid var(--black);
+            background-color: transparent;
+        }
+
+
+        .alarm-time {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 0.8rem;
+            color: var(--black) !important;
+            font-weight: bold;
+        }
+
+        .alarm-message {
+            font-size: 1.2rem;
+            color: var(--black);
+            max-width: calc(100% - 70px);
+            margin-left: 70px;
+        }
+
+        .drop-line {
+            position: relative;
+            height: 5px;
+            background-color: var(--black);
+            margin: 0;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+
+        .secure-reminder p,
+        .secure-reminder span {
+            color: var(--white);
+        }
+
+        .edit-alarm-btn {
+            position: absolute;
+            bottom: -7px;
+            right: 2px;
+            transform: translateY(-50%);
+            color: var(--black);
+            font-weight: bold;
+            border: 1px solid transparent;
+            font-size: 0.8rem;
+            border-radius: 5px;
+            background-color: var(--white);
+            opacity: 0.2;
+        }
+
+        .edit-alarm-btn:hover {
+            border-radius: 5px;
+            box-shadow: 0 0 0 2px var(--white);
+            background-color: var(--black);
+            color: var(--white);
+            opacity: 1;
+        }
+
+        #alarmMessage {
+            width: 100%;
+            height: 100%;
+            background-color: var(--white);
+            font-size: clamp(1.5rem, 1.5vw, 2rem);
+            border: 2px solid var(--black);
+            align-self: center;
+        }
+
+        .bio {
+            position: absolute;
+            display: flex;
+            flex-flow: column wrap;
+            width: 7em;
+            right: 2px;
+            top: 0;
+            border-left: 2px solid var(--black);
+            border-bottom: 2px solid var(--black);
+            background-color: transparent;
+        }
+
+        #bio1,
+        #bio2,
+        #bio3,
+        #descBio {
+            position: relative;
+            resize: none;
+            border: 0px solid transparent;
+            color: var(--black);
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+            font-size: 1rem;
+            z-index: 1;
+            border-bottom: 1px solid var(--black);
+            border-radius: 0;
+            line-height: 1.5;
+        }
+
+        #bio1:focus,
+        #bio2:focus,
+        #bio3:focus {
+            border-inline: 3px solid var(--black);
+        }
+
+        #descBio {
+            border-bottom: 2px solid var(--black);
+        }
+
+
+        #confirmationDialog {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .dialog-content {
+            position: absolute;
+            top: 25%;
+            background: var(--white);
+            border: 2px solid var(--black);
+            padding: 2em;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        #confirmButton,
+        #cancelButton {
+            border: 2px solid var(--black);
+            background-color: transparent;
+            padding: 0.5em;
+            font-weight: bold;
+            margin-top: 1em;
+        }
+
+        #confirmButton:hover {
+            background-color: var(--one);
+        }
+
+        #cancelButton:hover {
+            background-color: var(--five);
+        }
+
+
+        #clearAllDataLabel {
+            color: #e25245;
+            font-weight: bold;
+        }
+
+        h3 {
+            margin-bottom: 1.5em;
+        }
+
+        .distretti-container {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+
+
+        .distretti-container textarea {
+            border: 1px solid transparent;
+            font-size: clamp(1.2rem, 2vw, 2rem);
+            background-color: #F5F7F8;
+            outline: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .distretti-container textarea::placeholder {
+            text-align: center;
+            opacity: 0.3;
+        }
+
+        .controls-container {
+            display: flex;
+            margin-top: -5px;
+            margin-bottom: 2px;
+            opacity: 0.5;
+            user-select: none;
+        }
+
+        .controls-container label {
+            margin-right: 20px;
+            margin-left: 3px;
+        }
+
+
+
+        /*****************
+        * MYALERT STYLE *
+        *****************/
+
+        .myAlert-modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            right: 20px;
+            bottom: 1px;
+            width: auto;
+            height: auto;
+            overflow: auto;
+        }
+
+        .myAlert-modal-content {
+            background-color: #03C03C;
+            box-shadow: 1.4px 1.4px 1.4px #818181;
+            margin: 15% auto;
+            border-radius: 5px;
+            color: var(--white);
+            text-align: center;
+            padding: 0.5em;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+
+
+        @media print {
+
+            :root {
+                --white: white;
+            }
+
+            .controls-container {
+                display: none;
+            }
+
+            #comandi {
+                display: none;
+            }
+
+            #note {
+                height: 45vh;
+            }
+
+            textarea {
+                background-color: white !important;
+                color: #222 !important;
+            }
+
+            select {
+                background-color: white !important;
+                color: #222;
+                appearance: none;
+            }
+
+            ::placeholder {
+                opacity: 0 !important;
+            }
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <button id="copyValuesButton">Copy fmData Values</button>
+
+    <input type="text" id="fmDataInput" placeholder="Enter fmData value" />
+    <button id="saveFmDataButton">Save fmData</button>
+     -->
+
+    <div id="firedContainer"></div>
+    <div id="container">
+
+
+        <div id="comandi">
+
+            <div class="off-screen-menu">
+                <textarea name="noteInterne" id="noteInterne"></textarea>
+            </div>
+
+
+            <nav>
+                <label for="menu" id="noteLabel">Note</label>
+                <button class="ham-menu" id="menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+
+            <div class="colorpicker">
+                <div class="colors" id="one"></div>
+                <div class="colors" id="two"></div>
+                <div class="colors" id="three"></div>
+                <div class="colors" id="four"></div>
+                <div class="colors" id="five"></div>
+                <div class="colors" id="zero"></div>
+            </div>
+
+
+            <button id="addAlarmBtn">
+                <label for="addAlarmBtn" id="sveglieLabel">Sveglie</label>
+                <svg width="20px" height="20px" viewBox="2 2 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M11.9997 15.5815V9.58148M8.9997 12.5815H14.9997M18.9997 20.5815L16.4114 18.0165M4.9997 20.5815L7.58797 18.0165M6.74234 3.99735C6.36727 3.62228 5.85856 3.41156 5.32812 3.41156C4.79769 3.41156 4.28898 3.62228 3.91391 3.99735C3.53884 4.37242 3.32813 4.88113 3.32812 5.41156C3.32812 5.942 3.53884 6.4507 3.91391 6.82578M20.0858 6.82413C20.4609 6.44905 20.6716 5.94035 20.6716 5.40991C20.6716 4.87948 20.4609 4.37077 20.0858 3.9957C19.7107 3.62063 19.202 3.40991 18.6716 3.40991C18.1411 3.40991 17.6324 3.62063 17.2574 3.9957M18.9997 12.5815C18.9997 16.4475 15.8657 19.5815 11.9997 19.5815C8.1337 19.5815 4.9997 16.4475 4.9997 12.5815C4.9997 8.71549 8.1337 5.58149 11.9997 5.58149C15.8657 5.58149 18.9997 8.71549 18.9997 12.5815Z"
+                        stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <button id="clearSheet" onclick="clearSheet()">
+                <label for="clearSheet" id="clearLabel">Pulisci</label>
+                <svg width="20px" height="20px" viewBox="2 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.0722 3.9967L20.7508 9.83395L17.0544 13.5304L13.0758 17.5H21.0041V19H7.93503L4.00195 15.0669L15.0722 3.9967ZM10.952 17.5L15.4628 12.9994L11.8268 9.3634L6.12327 15.0669L8.55635 17.5H10.952Z"
+                        fill="#1F2328" />
+                </svg>
+
+            </button>
+
+            <button id="printSheet" onclick="printSheet()">
+                <label for="printSheet" id="stampaLabel">Stampa</label>
+                <svg fill="#000000" height="20px" width="20px" version="1.1" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 508 508"
+                    xml:space="preserve">
+                    <g>
+                        <g>
+                            <path d="M506.83,217.1l-54.7-123.9c-2.3-5.1-7.3-8.4-12.9-8.4h-26.7V14.1c0-7.8-6.3-14.1-14.1-14.1h-288.7
+                       c-7.8,0-14.1,6.3-14.1,14.1v70.7h-26.8c-5.6,0-10.6,3.3-12.9,8.4L1.23,217.1c-1.2,2.5-1.2,3.6-1.2,5.6v199.4
+                       c0,7.8,6.3,14.1,14.1,14.1h59.5l-19.9,52.7c-1.6,4.3-1.4,19.1,13.3,19.1h374h0.1c17.8,0,13.5-18.9,12.4-20.9l-19.2-50.9h59.5
+                       c7.8,0,14.1-6.3,14.1-14.1V222.7C508.03,220.7,508.03,219.9,506.83,217.1z M123.83,28.2h260.4v95.2h-260.4V28.2z M78.03,113h17.5
+                       v24.6c0,7.8,6.3,14.1,14.1,14.1h288.6c7.8,0,14.1-6.3,14.1-14.1V113h17.7l42.2,95.6H35.83L78.03,113z M87.43,479.8l30.8-81.6
+                       h271.6l30.8,81.6H87.43z M479.83,408L479.83,408h-56.1l-10.9-28.9c-2.1-5.5-7.3-9.1-13.2-9.1h-291.2c-5.9,0-11.1,3.6-13.2,9.1
+                       L84.33,408h-56.1V236.8h451.6V408z" />
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <path d="M338.03,268.3h-13.3c-7.8,0-14.1,6.3-14.1,14.1c0,7.8,6.3,14.1,14.1,14.1h13.3c7.8,0,14.1-6.3,14.1-14.1
+                       C352.13,274.6,345.83,268.3,338.03,268.3z" />
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <path d="M415.03,268.3h-13.3c-7.8,0-14.1,6.3-14.1,14.1c0,7.8,6.3,14.1,14.1,14.1h13.3c7.8,0,14.1-6.3,14.1-14.1
+                       C429.13,274.6,422.83,268.3,415.03,268.3z" />
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <path d="M347.53,61.7h-187c-7.8,0-14.1,6.3-14.1,14.1s6.3,14.1,14.1,14.1h186.9c7.8,0,14.1-6.3,14.1-14.1S355.33,61.7,347.53,61.7
+                       z" />
+                        </g>
+                    </g>
+                </svg>
+            </button>
+        </div>
+
+        <div id="tables-container"></div>
+
+        <div id="noteContainer">
+            <textarea name="note" id="note" rows="10"></textarea>
+            <div class="bio">
+                <div id="descBio">biologiche</div>
+                <textarea id="bio1" placeholder="bio..." rows="1"></textarea>
+                <textarea id="bio2" placeholder="bio..." rows="1"></textarea>
+                <textarea id="bio3" placeholder="bio..." rows="1"></textarea>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <div class="container">
+        <div id="alarmsContainer"></div>
+    </div>
+
+
+    <div id="modalContainer"></div>
+
+
+    <div id="confirmationDialog" style="display: none;">
+        <div class="dialog-content">
+            <h3>Sei davvero sicuro di pulire il foglio mezzi?</h3>
+            <label for="clearAllDataCheckbox" id="clearAllDataLabel">
+                <input type="checkbox" id="clearAllDataCheckbox">
+                Cancella pure le selettive e gli orari!
+            </label>
+            <br>
+            <button id="confirmButton">Conferma</button>
+            <button id="cancelButton">Annulla</button>
+        </div>
+    </div>
+
+
+
+
+    <!-- Modal for adding a new alarm -->
+    <div id="alarmModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="alarmTime" class="label">Orario:</label>
+                    <input type="time" id="alarmTime" required>
+                </div>
+                <div class="form-group">
+                    <label for="alarmMessage" class="label">Messaggio:</label>
+                    <textarea name="message" id="alarmMessage"></textarea>
+                </div>
+            </div>
+
+            <button id="saveAlarm">Salva</button>
+        </div>
+    </div>
+
+
+
+
+    <script>
+
+        // Number of columns (7 in this case)
+        const columns = 7;
+
+        let colour1 = "#94dbb5";
+        let colour2 = "#89a9db";
+        let colour3 = "#fbf195";
+        let colour4 = "#948bf5";
+        let colour5 = "#ea6a7a";
+        let colour6 = "#f3b9ed";
+        let colour7 = "#fafafa";
+
+
+        // Function to generate the grid table with unique IDs
+        function generateGrid(tableIndex) {
+            const tableContainer = document.createElement("div"); // Create a div for the grid table
+            tableContainer.classList.add("grid-container");
+            tableContainer.id = `table-${tableIndex}`; // Generate a unique ID for the table
+
+            // First row with textareas, class 'orario'
+            for (let i = 0; i < columns; i++) {
+                const textarea = document.createElement("textarea");
+                textarea.classList.add("orario");
+                textarea.setAttribute("placeholder", "orario");
+                textarea.setAttribute("rows", "1");
+                textarea.id = `table-${tableIndex}-orario-${i}`; // Generate a unique ID for each textarea
+                tableContainer.appendChild(textarea);
+            }
+
+            // Second row with textareas, class 'selettiva', and placeholders
+            for (let i = 0; i < columns; i++) {
+                const textarea = document.createElement("textarea");
+                textarea.classList.add("selettiva");
+                textarea.setAttribute("placeholder", "selettiva");
+                textarea.setAttribute("rows", "1");
+                textarea.id = `table-${tableIndex}-selettiva-${i}`; // Unique ID for each textarea
+                tableContainer.appendChild(textarea);
+            }
+
+            // Third row with <select> dropdowns, class 'statiMezzo'
+            for (let i = 0; i < columns; i++) {
+                const select = document.createElement("select");
+                select.classList.add("select_stati");
+                select.id = `table-${tableIndex}-statiMezzo-${i}`; // Unique ID for each select
+
+                const options = [
+                    { value: "", text: "Stato mezzo", disabled: true, selected: true, hidden: true },
+                    { value: "1", text: "Libera" },
+                    { value: "2", text: "In missione" },
+                    { value: "3", text: "In attesa" },
+                    { value: "4", text: "In rientro" },
+                    { value: "5", text: "Su urgenza" },
+                    { value: "6", text: "In mensa" },
+                    { value: "7", text: "Reset stato" }
+                ];
+
+                options.forEach(optionData => {
+                    const option = document.createElement("option");
+                    option.value = optionData.value;
+                    option.textContent = optionData.text;
+                    if (optionData.disabled) option.disabled = true;
+                    if (optionData.selected) option.selected = true;
+                    if (optionData.hidden) option.hidden = true;
+                    select.appendChild(option);
+                });
+
+                // Add event listener to manage 🍜✔ in the orario textarea
+                select.addEventListener('change', function () {
+                    const selectedValue = this.value;
+                    const orarioTextarea = document.getElementById(`table-${tableIndex}-orario-${i}`); // Get the corresponding orario textarea
+
+                    if (selectedValue === "6") {
+                        // Append 🍜✔ if option 6 is selected
+                        orarioTextarea.value += (orarioTextarea.value ? ' ' : '') + '🍜✔'; // Append 🍜✔
+                    } else if (selectedValue === "7") {
+                        // Remove 🍜✔ if option 7 is selected
+                        orarioTextarea.value = orarioTextarea.value.replace(/🍜✔/g, '').trim(); // Remove 🍜✔
+                    }
+
+                    // Change background color based on selected option
+                    switch (selectedValue) {
+                        case "1":
+                            this.style.backgroundColor = colour1;
+                            break;
+                        case "2":
+                            this.style.backgroundColor = colour2; // Blue
+                            break;
+                        case "3":
+                            this.style.backgroundColor = colour3; // Yellow
+                            break;
+                        case "4":
+                            this.style.backgroundColor = colour4; // violet
+                            break;
+                        case "5":
+                            this.style.backgroundColor = colour5; // Red
+                            break;
+                        case "6":
+                            this.style.backgroundColor = colour6; // Light pink
+                            break;
+                        case "7":
+                            this.style.backgroundColor = colour7; // gray
+                            break;
+                        default:
+                            this.style.backgroundColor = "#fafafa"; // Default background
+                            break;
+                    }
+                });
+
+                tableContainer.appendChild(select);
+            }
+
+            // Fourth row with textareas, class 'stati'
+            for (let i = 0; i < columns; i++) {
+                const textarea = document.createElement("textarea");
+                textarea.classList.add("stati");
+                textarea.setAttribute("rows", "2");
+                textarea.id = `table-${tableIndex}-stati-${i}`; // Unique ID for each textarea
+                tableContainer.appendChild(textarea);
+            }
+
+            // Fifth row with textareas, class 'appunti'
+            for (let i = 0; i < columns; i++) {
+                const textarea = document.createElement("textarea");
+                textarea.classList.add("appunti");
+                textarea.setAttribute("rows", "3");
+                textarea.id = `table-${tableIndex}-appunti-${i}`; // Unique ID for each textarea
+                tableContainer.appendChild(textarea);
+            }
+
+            // Sixth row with textareas, class 'altriAppunti'
+            for (let i = 0; i < columns; i++) {
+                const textarea = document.createElement("textarea");
+                textarea.classList.add("altriAppunti");
+                textarea.setAttribute("rows", "3");
+                textarea.id = `table-${tableIndex}-altriAppunti-${i}`; // Unique ID for each textarea
+                tableContainer.appendChild(textarea);
+            }
+
+            // Check if extra appunti should be shown initially
+            const extraNotesCheckbox = document.getElementById('extra-notes-toggle');
+            if (extraNotesCheckbox && extraNotesCheckbox.checked) {
+                toggleExtraNotesRow(tableContainer, tableIndex, true);
+            }
+
+            // Append the grid container to the main tables container
+            document.getElementById("tables-container").appendChild(tableContainer);
+        }
+
+
+        function createDistretti() {
+            const tables = [document.getElementById("table-1"), document.getElementById("table-2")];
+
+            // Retrieve visibility state from storage
+            const allData = getAllData();
+            const distrettiVisible = allData.distrettiVisible;
+
+            tables.forEach((table, tableIndex) => {
+                // Create a new container for each table
+                const distrettiContainer = document.createElement("div");
+                distrettiContainer.classList.add("distretti-container");
+
+                // Set the display style based on saved visibility state
+                distrettiContainer.style.display = distrettiVisible ? 'flex' : 'none';
+
+                // Create two textareas and add them to the container with unique IDs
+                const distretto1 = document.createElement("textarea");
+                distretto1.setAttribute("rows", 1);
+                distretto1.setAttribute("placeholder", "distretto");
+                distretto1.id = `table-${tableIndex}-distretto-1`;
+
+                const distretto2 = document.createElement("textarea");
+                distretto2.setAttribute("rows", 1);
+                distretto2.setAttribute("placeholder", "distretto");
+                distretto2.id = `table-${tableIndex}-distretto-2`;
+
+                distrettiContainer.appendChild(distretto1);
+                distrettiContainer.appendChild(distretto2);
+
+                // Insert the container before the current table
+                table.parentNode.insertBefore(distrettiContainer, table);
+            });
+        }
+
+
+
+
+        function createCheckboxControls() {
+            const controlsContainer = document.createElement("div");
+            controlsContainer.classList.add("controls-container");
+
+            // Create extra notes toggle
+            const extraNotesCheckbox = document.createElement("input");
+            extraNotesCheckbox.type = "checkbox";
+            extraNotesCheckbox.id = "extra-notes-toggle";
+
+            const extraNotesLabel = document.createElement("label");
+            extraNotesLabel.htmlFor = "extra-notes-toggle";
+            extraNotesLabel.textContent = "Aggiungi riga aggiuntiva";
+
+            // Create distretti toggle
+            const hideDistrettiCheckbox = document.createElement("input");
+            hideDistrettiCheckbox.type = "checkbox";
+            hideDistrettiCheckbox.id = "hide-distretti-toggle";
+
+            const hideDistrettiLabel = document.createElement("label");
+            hideDistrettiLabel.htmlFor = "hide-distretti-toggle";
+            hideDistrettiLabel.textContent = "Rimuovi riga distretti";
+
+            // Add elements to container
+            controlsContainer.appendChild(extraNotesCheckbox);
+            controlsContainer.appendChild(extraNotesLabel);
+            controlsContainer.appendChild(hideDistrettiCheckbox);
+            controlsContainer.appendChild(hideDistrettiLabel);
+
+            // Insert controls before tables-container
+            const tablesContainer = document.getElementById("tables-container");
+            tablesContainer.parentNode.insertBefore(controlsContainer, tablesContainer);
+
+            // Load initial states from stored data
+            const allData = getAllData();
+            extraNotesCheckbox.checked = allData.extraNotesEnabled;
+            hideDistrettiCheckbox.checked = !allData.distrettiVisible;
+
+            // Add event listeners
+            extraNotesCheckbox.addEventListener('change', function () {
+                const tables = document.querySelectorAll('.grid-container');
+                tables.forEach((table, tableIndex) => {
+                    toggleExtraNotesRow(table, tableIndex, this.checked);
+                });
+                saveAllContent();
+            });
+
+            hideDistrettiCheckbox.addEventListener('change', function () {
+                const distrettiContainers = document.querySelectorAll('.distretti-container');
+                distrettiContainers.forEach(container => {
+                    container.style.display = this.checked ? 'none' : 'flex';
+                });
+                saveAllContent();
+            });
+        }
+
+        // Function to toggle extra notes row
+        function toggleExtraNotesRow(tableContainer, tableIndex, show) {
+            const rowClassName = 'extraNotes';
+            const existingRows = tableContainer.querySelectorAll(`.${rowClassName}`);
+
+            if (show && existingRows.length === 0) {
+                const allData = getAllData();
+
+                // Add new row
+                for (let i = 0; i < 7; i++) {
+                    const textarea = document.createElement("textarea");
+                    textarea.classList.add(rowClassName);
+                    textarea.setAttribute("rows", "3");
+                    textarea.id = `table-${tableIndex}-${rowClassName}-${i}`;
+
+                    // Attach all the same event listeners as other textareas
+                    textarea.setAttribute('autocomplete', 'off');
+                    textarea.setAttribute('autocorrect', 'off');
+                    textarea.setAttribute('autocapitalize', 'off');
+                    textarea.setAttribute('spellcheck', false);
+                    textarea.addEventListener("input", saveAllContent);
+                    textarea.addEventListener('dragover', function (event) {
+                        event.preventDefault();
+                    });
+                    textarea.addEventListener('drop', function (event) {
+                        event.preventDefault();
+                    });
+
+                    // Immediately after creating, check if we have stored data for this textarea
+                    const storedData = allData.formData[textarea.id];
+                    if (storedData) {
+                        textarea.value = storedData.value;
+                        textarea.style.backgroundColor = storedData.color;
+                    }
+
+                    tableContainer.appendChild(textarea);
+                }
+            } else if (!show && existingRows.length > 0) {
+                // Remove existing rows
+                existingRows.forEach(row => row.remove());
+            }
+        }
+
+        // Call the function to generate two grid tables on page load, each with unique IDs
+        window.onload = function () {
+            generateGrid(1); // First grid table (id = table-1)
+            generateGrid(2); // Second grid table (id = table-2)
+            createCheckboxControls();
+            createDistretti();
+            loadAllContent(); // Load all saved content
+
+            initializeEventListeners(); // Set up all event listeners
+            checkAlarmTimes(); // Start checking alarm times
+            setInterval(checkAlarmTimes, 5000); // Continue checking alarm times
+
+            // Function to create and append a button
+            function createToggleButton(tableId, columns, tableIndex) {
+                const button = document.createElement('button');
+                button.id = `toggleRow${tableId}`;
+                button.textContent = '-';
+
+                // Append the button to the container
+                const position = document.getElementById(tableId);
+                position.appendChild(button);
+
+                // Store the initial state of the textareas
+                const initialTextareas = [];
+                for (let i = 0; i < columns; i++) {
+                    initialTextareas.push({
+                        id: `table-${tableIndex}-altriAppunti-${i}`,
+                        class: 'altriAppunti',
+                        rows: 3
+                    });
+                }
+
+                // Add event listener to the button
+                button.addEventListener("click", function () {
+                    const allAltriAppunti = document.querySelectorAll(`#${tableId} .altriAppunti`);
+                    if (button.textContent === '-') {
+                        allAltriAppunti.forEach(textarea => textarea.remove()); // Remove each textarea
+                        button.textContent = '+'; // Change button text to "+"
+                    } else {
+                        // Re-add the textareas
+                        initialTextareas.forEach(textareaData => {
+                            const newTextarea = document.createElement('textarea');
+                            newTextarea.classList.add(textareaData.class);
+                            newTextarea.setAttribute("rows", textareaData.rows);
+                            newTextarea.id = textareaData.id; // Unique ID for each textarea
+                            position.appendChild(newTextarea);
+                        });
+                        button.textContent = '-'; // Change button text to "-"
+                    }
+                });
+            }
+
+            // Create and append buttons for both tables
+            createToggleButton('table-1', columns, 1); // Assuming 5 columns for table-1
+            createToggleButton('table-2', columns, 2); // Assuming 5 columns for table-2
+
+
+
+
+            const hamMenu = document.querySelector(".ham-menu");
+
+            const offScreenMenu = document.querySelector(".off-screen-menu");
+
+            hamMenu.addEventListener("click", () => {
+                hamMenu.classList.toggle("active");
+                offScreenMenu.classList.toggle("active");
+                const noteLabel = document.getElementById("noteLabel");
+
+
+                if (noteLabel.style.display === "none") {
+                    noteLabel.style.display = "block"; // or the original display style
+                } else {
+                    noteLabel.style.display = "none";
+                }
+            });
+
+
+            // Function to handle the updates and maintain history
+            function handleUpdate(select, statiTextareaId, undoHistory, redoHistory) {
+                const value = select.value;
+                let paintColour;
+                let message;
+                const currentTime = new Date().toTimeString().substr(0, 5);
+
+                const statiTextarea = document.getElementById(statiTextareaId);
+
+                // Store the current message in undoHistory before updating
+                undoHistory.push({ value: statiTextarea.value, color: statiTextarea.style.backgroundColor });
+                // Clear redoHistory on new action
+                redoHistory.length = 0;
+
+                switch (value) {
+                    case "1":
+                        paintColour = colour1;
+                        message = "dalle " + currentTime;
+                        break;
+                    case "2":
+                        paintColour = colour2;
+                        message = "dalle " + currentTime;
+                        break;
+                    case "3":
+                        paintColour = colour3;
+                        message = "dalle " + currentTime;
+                        break;
+                    case "4":
+                        paintColour = colour4;
+                        message = "libera dalle " + currentTime;
+                        break;
+                    case "5":
+                        paintColour = colour5;
+                        message = "dalle " + currentTime;
+                        break;
+                    case "6":
+                        paintColour = colour6;
+                        message = "dalle " + currentTime;
+                        break;
+                    case "7":
+                        clearFromLocalStorage(statiTextareaId);
+                        statiTextarea.style.backgroundColor = "#fafafa";
+                        statiTextarea.value = "";
+                        saveAllContent();
+                        return;
+                    default:
+                        paintColour = "#fafafa";
+                        message = "";
+                }
+
+                statiTextarea.style.backgroundColor = paintColour;
+                statiTextarea.value = message;
+
+                if (value === "3" || value === "default")
+                    select.classList.add('option3');
+                else
+                    select.classList.remove('option3');
+
+
+
+                saveAllContent();
+            }
+
+            // Function to handle undo operation
+            function handleUndo(statiTextareaId, undoHistory, redoHistory) {
+                const statiTextarea = document.getElementById(statiTextareaId);
+
+                if (undoHistory.length > 0) {
+                    const previousState = undoHistory.pop(); // Get the last state from undo history
+                    redoHistory.push({ value: statiTextarea.value, color: statiTextarea.style.backgroundColor }); // Save the current state to redo history
+
+                    statiTextarea.value = previousState.value;
+                    statiTextarea.style.backgroundColor = previousState.color;
+
+                    saveAllContent();
+                }
+            }
+
+            // Function to handle redo operation
+            function handleRedo(statiTextareaId, redoHistory) {
+                const statiTextarea = document.getElementById(statiTextareaId);
+
+                if (redoHistory.length > 0) {
+                    const nextState = redoHistory.pop(); // Get the last state from redo history
+
+                    statiTextarea.value = nextState.value;
+                    statiTextarea.style.backgroundColor = nextState.color;
+
+                    saveAllContent();
+                }
+            }
+
+            // Attach the change event listener for select elements
+            document.querySelectorAll(".select_stati").forEach(function (select) {
+                const statiTextareaId = select.id.replace("statiMezzo", "stati");
+                const undoHistory = []; // Initialize an empty array to store undo history
+                const redoHistory = []; // Initialize an empty array to store redo history
+
+                // Attach the change event listener
+                select.addEventListener("change", function () {
+                    handleUpdate(select, statiTextareaId, undoHistory, redoHistory);
+                });
+
+                // Trigger the update function on focus to update the time even for the same selection
+                select.addEventListener("focus", function () {
+                    handleUpdate(select, statiTextareaId, undoHistory, redoHistory);
+                });
+
+                // Attach keydown event listener to handle Ctrl+Z for undo and Ctrl+Y for redo
+                const statiTextarea = document.getElementById(statiTextareaId);
+                statiTextarea.addEventListener("keydown", function (event) {
+                    if (event.ctrlKey && event.key === 'z') {
+                        event.preventDefault();
+                        handleUndo(statiTextareaId, undoHistory, redoHistory);
+                    }
+                    if (event.ctrlKey && event.key === 'y') {
+                        event.preventDefault();
+                        handleRedo(statiTextareaId, redoHistory);
+                    }
+                });
+            });
+
+            saveAllContentOnChange(); // Attach change listeners to save on input or change
+
+            // Select all elements with the class 'selettiva'
+            const selettivaElements = document.querySelectorAll('.selettiva');
+
+            // Attach click event listeners to each selected element
+            selettivaElements.forEach(function (element) {
+                element.addEventListener('click', function () {
+                    var temp = this.value; // Access the value of the clicked element
+                    if (temp !== '') {
+                        // Replace characters as specified
+                        temp = temp.replace(/E|e|-/g, '');
+
+                        // Write to clipboard
+                        navigator.clipboard.writeText(temp).then(() => {
+                            customAlert.show("selettiva copiata");
+                        }).catch(err => {
+                            console.error('Error copying text: ', err);
+                        });
+                    }
+                });
+            });
+
+            const customAlert = new CustomAlert();
+
+
+            const noteInterne = document.getElementById('noteInterne');
+            const noteLabel = document.getElementById('noteLabel');
+
+            noteInterne.addEventListener('focus', () => {
+                noteLabel.classList.add('focused'); // Add class on focus
+            });
+
+            noteInterne.addEventListener('blur', () => {
+                noteLabel.classList.remove('focused'); // Remove class on blur
+            });
+        };
+
+
+        // Function to attach all event listeners
+        function initializeEventListeners() {
+            // Attach input event listeners to textareas
+            document.querySelectorAll("textarea").forEach(function (textarea) {
+                textarea.setAttribute('autocomplete', 'off')
+                textarea.setAttribute('autocorrect', 'off')
+                textarea.setAttribute('autocapitalize', 'off')
+                textarea.setAttribute('spellcheck', false)
+                textarea.addEventListener("input", saveAllContent);
+                textarea.addEventListener('dragover', function (event) {
+                    event.preventDefault();  // Prevent dragover behavior
+                });
+
+                textarea.addEventListener('drop', function (event) {
+                    event.preventDefault();  // Prevent drop behavior (copying)
+                });
+            });
+
+            // Attach change event listeners to selects
+            document.querySelectorAll("select").forEach(function (select) {
+                select.addEventListener("change", saveAllContent);
+            });
+
+            //Color picker functionality
+            document.querySelectorAll(".colorpicker .colors").forEach(function (colorElement) {
+                colorElement.addEventListener("click", function () {
+                    const backgroundColor = window.getComputedStyle(this).backgroundColor;
+
+                    document.querySelectorAll(".selettiva, .orario, .appunti, .altriAppunti, .extraNotes").forEach(function (targetElement) {
+                        targetElement.addEventListener("dblclick", function () {
+                            this.style.backgroundColor = backgroundColor;
+                            saveAllContent(); // Save after color change
+                        });
+                    });
+                });
+            });
+
+            // Alarm system event listeners
+            addAlarmBtn.addEventListener('click', function () {
+                editingAlarmId = null;
+                clearModalFields();
+                alarmModal.style.display = 'block';
+            });
+
+            closeModalBtn.addEventListener('click', function () {
+                alarmModal.style.display = 'none';
+            });
+
+            saveAlarmBtn.addEventListener('click', handleAlarmSave);
+
+            // Initialize alarm container drag and drop
+            initializeAlarmDragDrop();
+        }
+
+
+        /**************************
+         * LOCALSTORAGE FUNCTIONS *
+         **************************/
+
+        // Global variables for alarm system
+        let dropLine;
+        let editingAlarmId = null;
+
+        // Get references to elements
+        var addAlarmBtn = document.getElementById('addAlarmBtn');
+        var alarmModal = document.getElementById('alarmModal');
+        var closeModalBtn = document.getElementById('closeModal');
+        var saveAlarmBtn = document.getElementById('saveAlarm');
+        var alarmsContainer = document.getElementById('alarmsContainer');
+
+
+        function addAlarmToDOM(alarm) {
+            var newAlarmElement = document.createElement('div');
+            newAlarmElement.classList.add('alarm');
+            newAlarmElement.setAttribute('data-alarm-id', alarm.id);
+            newAlarmElement.setAttribute('draggable', true);
+            newAlarmElement.style.opacity = '0.8';
+
+            // Create state div for blinking effect
+            var stateDiv = document.createElement('div');
+            stateDiv.classList.add('alarm-state');
+
+            // Create time span
+            var timeSpan = document.createElement('span');
+            timeSpan.textContent = alarm.time;
+            timeSpan.classList.add('alarm-time');
+
+            // Append time span to state div
+            stateDiv.appendChild(timeSpan);
+
+            // Create message paragraph
+            var messageParagraph = document.createElement('p');
+            messageParagraph.textContent = alarm.message;
+            messageParagraph.classList.add('alarm-message');
+
+            // Create edit button
+            var editButton = document.createElement('button');
+            editButton.textContent = 'Edit';
+            editButton.classList.add('edit-alarm-btn');
+
+            // Add elements to alarm container
+            newAlarmElement.appendChild(stateDiv);
+            newAlarmElement.appendChild(messageParagraph);
+            newAlarmElement.appendChild(editButton);
+
+            // Add event listeners
+            editButton.addEventListener('click', () => editAlarm(alarm));
+
+            // Double-click to remove
+            newAlarmElement.addEventListener('dblclick', function () {
+                const alarmsContainer = document.getElementById('alarmsContainer');
+                const firedContainer = document.getElementById('firedContainer');
+
+                if (alarmsContainer && alarmsContainer.contains(newAlarmElement)) {
+                    alarmsContainer.removeChild(newAlarmElement);
+                } else if (firedContainer && firedContainer.contains(newAlarmElement)) {
+                    firedContainer.removeChild(newAlarmElement);
+                }
+
+                removeAlarmFromLocalStorage(alarm.id);
+            });
+
+            // Drag start
+            newAlarmElement.addEventListener('dragstart', function (event) {
+                event.dataTransfer.setData('text/plain', alarm.id);
+                newAlarmElement.classList.add('dragging');
+                setTimeout(() => {
+                    newAlarmElement.style.display = 'none';
+                }, 0);
+            });
+
+            // Drag end
+            newAlarmElement.addEventListener('dragend', function () {
+                newAlarmElement.style.display = 'block';
+                newAlarmElement.classList.remove('dragging');
+                if (dropLine && dropLine.parentNode) {
+                    dropLine.parentNode.removeChild(dropLine);
+                    dropLine = null;
+                }
+            });
+
+            // Drag over handling for this specific alarm
+            newAlarmElement.addEventListener('dragover', function (event) {
+                event.preventDefault();
+
+                if (dropLine && dropLine.parentNode) {
+                    dropLine.parentNode.removeChild(dropLine);
+                }
+
+                dropLine = document.createElement('div');
+                dropLine.classList.add('drop-line');
+
+                const rect = newAlarmElement.getBoundingClientRect();
+                const mouseY = event.clientY;
+                const threshold = rect.top + (rect.height / 2);
+
+                if (mouseY < threshold) {
+                    newAlarmElement.parentNode.insertBefore(dropLine, newAlarmElement);
+                } else {
+                    newAlarmElement.parentNode.insertBefore(dropLine, newAlarmElement.nextSibling);
+                }
+            });
+
+            alarmsContainer.appendChild(newAlarmElement);
+        }
+
+        // Function to initialize drag and drop functionality for alarms
+        function initializeAlarmDragDrop() {
+            // Allow dropping on the alarmsContainer
+            alarmsContainer.addEventListener('dragover', function (event) {
+                event.preventDefault(); // Prevent default to allow drop
+            });
+
+            // Handle dropping of alarms
+            alarmsContainer.addEventListener('drop', function (event) {
+                event.preventDefault();
+                if (dropLine) {
+                    alarmsContainer.removeChild(dropLine);
+                    dropLine = null;
+                }
+
+                const draggedAlarmId = event.dataTransfer.getData('text/plain');
+                const draggedAlarmElement = document.querySelector(`.alarm[data-alarm-id='${draggedAlarmId}']`);
+
+                if (draggedAlarmElement) {
+                    // Get the alarm element where the dragged alarm is dropped
+                    const targetAlarm = event.target.closest('.alarm');
+
+                    if (targetAlarm && targetAlarm !== draggedAlarmElement) {
+                        // Insert the dragged alarm before the target alarm
+                        alarmsContainer.insertBefore(draggedAlarmElement, targetAlarm);
+                    } else if (!targetAlarm) {
+                        // If dropped in an empty area, append to the end
+                        alarmsContainer.appendChild(draggedAlarmElement);
+                    }
+
+                    // Save the new order to localStorage
+                    saveAlarmsOrderToLocalStorage();
+                }
+            });
+
+            // Add dragover event listener to the container for the drop line
+            alarmsContainer.addEventListener('dragover', function (event) {
+                event.preventDefault();
+
+                // Find the closest alarm element from the current drag position
+                const targetAlarm = event.target.closest('.alarm');
+
+                if (targetAlarm) {
+                    // Remove existing drop line if present
+                    if (dropLine) {
+                        alarmsContainer.removeChild(dropLine);
+                    }
+
+                    // Create new drop line
+                    dropLine = document.createElement('div');
+                    dropLine.classList.add('drop-line');
+
+                    // Position the line before the target alarm
+                    alarmsContainer.insertBefore(dropLine, targetAlarm);
+                } else if (!dropLine && event.target === alarmsContainer) {
+                    // If dragging over empty space in the container
+                    dropLine = document.createElement('div');
+                    dropLine.classList.add('drop-line');
+                    alarmsContainer.appendChild(dropLine);
+                }
+            });
+
+            // Clean up drop line when leaving the container
+            alarmsContainer.addEventListener('dragleave', function (event) {
+                if (event.target === alarmsContainer && dropLine) {
+                    alarmsContainer.removeChild(dropLine);
+                    dropLine = null;
+                }
+            });
+        }
+
+        // Clear modal fields after saving or when opening for a new entry
+        function clearModalFields() {
+            document.getElementById('alarmTime').value = '';
+            document.getElementById('alarmMessage').value = '';
+        }
+
+        // Function to update an alarm in the DOM
+        function updateAlarmInDOM(alarm) {
+            var alarmElement = document.querySelector(`.alarm[data-alarm-id='${alarm.id}']`);
+
+            if (alarmElement) {
+                alarmElement.querySelector('.alarm-time').textContent = alarm.time;
+                alarmElement.querySelector('.alarm-message').textContent = alarm.message;
+            }
+        }
+
+
+        // Show modal when editing an existing alarm
+        function editAlarm(alarm) {
+            editingAlarmId = alarm.id; // Set the ID of the alarm being edited
+
+            // Populate the modal fields with the alarm data
+            document.getElementById('alarmTime').value = alarm.time;
+            document.getElementById('alarmMessage').value = alarm.message;
+            alarmModal.style.display = 'block'; // Show the modal
+        }
+
+        // Get all data from localStorage with proper initialization
+        function getAllData() {
+            const defaultData = {
+                formData: {},
+                alarms: [],
+                extraNotesEnabled: false,
+                distrettiVisible: true // Default to true to show distretti initially
+            };
+            try {
+                const storedData = localStorage.getItem("fmData");
+                if (storedData) {
+                    const parsedData = JSON.parse(storedData);
+                    return {
+                        formData: parsedData.formData || {},
+                        alarms: Array.isArray(parsedData.alarms) ? parsedData.alarms : [],
+                        extraNotesEnabled: parsedData.extraNotesEnabled || false,
+                        distrettiVisible: typeof parsedData.distrettiVisible === 'boolean' ? parsedData.distrettiVisible : true
+                    };
+                }
+            } catch (error) {
+                console.error("Error parsing localStorage data:", error);
+            }
+            return defaultData;
+        }
+
+
+
+        //Save all content (form data and alarms)
+        function saveAllContent() {
+            const allData = getAllData();
+
+            // Save form data
+            document.querySelectorAll("textarea, select").forEach(function (element) {
+                let value = element.value;
+                if (element.tagName.toLowerCase() === "textarea") {
+                    // Apply all text transformations for textareas
+                    value = value.replace("->", "⇒");
+                    value = value.replace(/free |FREE |green |GREEN /g, "🟢");
+                    value = value.replace(/busy |BUSY |yellow |YELLOW /g, "🟡");
+                    value = value.replace(/red |Red |RED /g, "🔴");
+                    // Update textarea with transformed value
+                    element.value = value;
+                }
+
+                // Store element content
+                allData.formData[element.id] = {
+                    value: value,
+                    color: element.style.backgroundColor
+                };
+            });
+
+            // Save distretti visibility state based on checkbox
+            const distrettiCheckbox = document.getElementById('hide-distretti-toggle');
+            if (distrettiCheckbox) {
+                allData.distrettiVisible = !distrettiCheckbox.checked; // Checkbox checked means hidden
+            }
+
+
+            // Save extra notes state in the main data structure
+            const extraNotesCheckbox = document.getElementById('extra-notes-toggle');
+            if (extraNotesCheckbox) {
+                allData.extraNotesEnabled = extraNotesCheckbox.checked;
+            }
+
+
+            // Save to localStorage
+            try {
+                localStorage.setItem("fmData", JSON.stringify(allData));
+            } catch (error) {
+                console.error("Error saving data to localStorage:", error);
+            }
+        }
+
+        // Function to load all content
+        function loadAllContent() {
+            const allData = getAllData();
+
+
+            // First, create extra notes if enabled
+            if (allData.extraNotesEnabled) {
+                const extraNotesCheckbox = document.getElementById('extra-notes-toggle');
+                if (extraNotesCheckbox) {
+                    extraNotesCheckbox.checked = true;
+                }
+
+                const tables = document.querySelectorAll('.grid-container');
+                tables.forEach((table, tableIndex) => {
+                    toggleExtraNotesRow(table, tableIndex, true);
+                });
+            }
+
+            // Set the distretti visibility state correctly
+            const hideDistrettiCheckbox = document.getElementById('hide-distretti-toggle');
+            const distrettiContainers = document.querySelectorAll('.distretti-container');
+
+            // Set the checkbox to reflect the saved state
+            if (hideDistrettiCheckbox) {
+                hideDistrettiCheckbox.checked = !allData.distrettiVisible;
+            }
+
+            // Update visibility of each distretti container based on saved state
+            distrettiContainers.forEach(container => {
+                container.style.display = allData.distrettiVisible ? 'flex' : 'none';
+            });
+
+
+            // Then load all content, including extra notes
+            document.querySelectorAll("textarea, select").forEach(function (element) {
+                const storedData = allData.formData[element.id];
+                if (storedData) {
+                    element.value = storedData.value;
+                    element.style.backgroundColor = storedData.color;
+                }
+            });
+
+            // Load alarms
+            loadAlarmsFromLocalStorage();
+        }
+
+        // Function to save alarm to storage
+        function saveAlarmToLocalStorage(alarm) {
+            const allData = getAllData();
+            allData.alarms.push(alarm);
+            localStorage.setItem("fmData", JSON.stringify(allData));
+        }
+
+        function startSound() {
+            try {
+
+                const audio = new Audio('sound.mp3');
+
+                audio.onerror = function () {
+                    console.error('Error: The audio file could not be loaded.');
+                };
+
+                audio.play();
+
+                setTimeout(() => {
+                    audio.pause();
+                    audio.currentTime = 0;
+                }, 2000);
+            } catch (error) {
+                console.error('An unexpected error occurred:', error);
+            }
+        }
+
+
+
+
+        // Function to check alarm times
+        function checkAlarmTimes() {
+            var currentDateTime = new Date();
+            const allData = getAllData();
+
+            document.querySelectorAll('.alarm').forEach(function (alarmElement) {
+                var alarmId = parseInt(alarmElement.getAttribute('data-alarm-id'));
+                var alarmData = allData.alarms.find(alarm => alarm.id === alarmId);
+
+                if (alarmData) {
+                    var alarmDateTime = new Date(currentDateTime.toDateString() + ' ' + alarmData.time);
+                    var stateDiv = alarmElement.querySelector('.alarm-state');
+
+                    if (currentDateTime >= alarmDateTime && alarmData.day === currentDateTime.toISOString().split('T')[0]) {
+                        stateDiv.classList.add('blinking');
+                        //startSound();
+
+                        // Add the alarm element to the #firedContainer div
+                        const firedContainer = document.getElementById('firedContainer');
+                        if (!firedContainer.contains(alarmElement)) {
+                            firedContainer.appendChild(alarmElement);
+                        }
+
+                        var reminderTime = new Date(alarmDateTime.getTime() + 5 * 60 * 1000);
+                        if (currentDateTime >= reminderTime) {
+                            alarmElement.classList.add('secure-reminder');
+                        }
+                    } else {
+                        stateDiv.classList.remove('blinking');
+                        alarmElement.classList.remove('secure-reminder');
+                    }
+                }
+            });
+        }
+        // Function to handle saving alarms
+        function handleAlarmSave() {
+            var alarmTime = document.getElementById('alarmTime').value;
+            var alarmMessage = document.getElementById('alarmMessage').value;
+
+            if (!alarmTime || !alarmMessage) {
+                alert('Inserisci orario e messaggio!');
+                return;
+            }
+
+            const allData = getAllData();
+
+            if (editingAlarmId === null) {
+                // Adding a new alarm
+                var newAlarm = {
+                    id: new Date().getTime(),
+                    time: alarmTime,
+                    message: alarmMessage,
+                    day: new Date().toISOString().split('T')[0]
+                };
+
+                // Add new alarm to the DOM
+                addAlarmToDOM(newAlarm);
+
+                // Add to storage
+                allData.alarms.push(newAlarm);
+            } else {
+                // Editing an existing alarm
+                const alarmIndex = allData.alarms.findIndex(alarm => alarm.id === editingAlarmId);
+
+                if (alarmIndex !== -1) {
+                    // Update the alarm data
+                    allData.alarms[alarmIndex] = {
+                        ...allData.alarms[alarmIndex],
+                        time: alarmTime,
+                        message: alarmMessage
+                    };
+
+                    // Update the DOM
+                    updateAlarmInDOM(allData.alarms[alarmIndex]);
+                }
+            }
+
+            // Save updated data
+            localStorage.setItem("fmData", JSON.stringify(allData));
+
+            // Close modal and clear fields
+            alarmModal.style.display = 'none';
+            clearModalFields();
+
+            // Check for updated alarms immediately
+            checkAlarmTimes();
+        }
+
+        // Function to load alarms from storage
+        function loadAlarmsFromLocalStorage() {
+            const allData = getAllData();
+
+            // Clear existing alarms from DOM before loading
+            alarmsContainer.innerHTML = '';
+
+            // Add each alarm to the DOM
+            allData.alarms.forEach(function (alarm) {
+                addAlarmToDOM(alarm);
+            });
+        }
+        // Function to remove alarm from storage
+        function removeAlarmFromLocalStorage(alarmId) {
+            const allData = getAllData();
+            allData.alarms = allData.alarms.filter(alarm => alarm.id !== alarmId);
+            try {
+                localStorage.setItem("fmData", JSON.stringify(allData));
+            } catch (error) {
+                console.error("Error removing alarm from localStorage:", error);
+            }
+        }
+
+        // Function to save alarms order
+        function saveAlarmsOrderToLocalStorage() {
+            const allData = getAllData();
+            allData.alarms = Array.from(alarmsContainer.children).map(alarmElement => ({
+                id: parseInt(alarmElement.getAttribute('data-alarm-id')),
+                time: alarmElement.querySelector('.alarm-time').textContent,
+                message: alarmElement.querySelector('.alarm-message').textContent,
+                day: new Date().toISOString().split('T')[0]
+            }));
+            localStorage.setItem("fmData", JSON.stringify(allData));
+        }
+
+        // Function to save content on every input or change event
+        function saveAllContentOnChange() {
+            // Save data on textarea input
+            document.querySelectorAll("textarea").forEach(function (textarea) {
+                textarea.addEventListener("input", saveAllContent); // Save whenever the textarea content changes
+            });
+
+            // Save data on select change
+            document.querySelectorAll("select").forEach(function (select) {
+                select.addEventListener("change", saveAllContent); // Save whenever the select value changes
+            });
+        }
+
+        // Function to clear specific data from localStorage based on textarea ID
+        function clearFromLocalStorage(textareaId) {
+            const savedData = JSON.parse(localStorage.getItem("fmData"));
+            if (savedData && savedData[textareaId]) {
+                delete savedData[textareaId]; // Remove the specific textarea from savedData
+                localStorage.setItem("fmData", JSON.stringify(savedData)); // Save updated data back to localStorage
+                console.log(`Cleared ${textareaId} from localStorage`); // Debug message
+            }
+        }
+
+        function clearLocalStorageExceptKey(keyToPreserve) {
+            // Iterate through all keys in localStorage
+            Object.keys(localStorage).forEach(function (key) {
+                // Check if the current key is not the one we want to preserve
+                if (key !== keyToPreserve) {
+                    localStorage.removeItem(key); // Remove the key
+                }
+            });
+        }
+
+
+        function clearSheet() {
+            // First confirmation dialog
+            if (confirm('Sei sicuro di voler pulire tutto il foglio mezzi?')) {
+                // Show the custom confirmation dialog
+                document.getElementById('confirmationDialog').style.display = 'flex';
+
+                document.getElementById('confirmButton').onclick = function () {
+                    const clearAllData = document.getElementById('clearAllDataCheckbox').checked;
+
+                    if (clearAllData) {
+                        // Clear all data
+                        Object.keys(localStorage).forEach(function (key) {
+                            if (key.startsWith("fmData")) {
+                                localStorage.removeItem(key);
+                            }
+                        });
+                        location.reload(true);
+                    } else {
+                        // Only clear the specific keys
+                        const data = getAllData();
+                        const preservedData = {
+                            formData: {},
+                            alarms: data.alarms // Preserve alarms
+                        };
+
+                        if (data.formData) {
+                            for (const key in data.formData) {
+                                if (key.includes("selettiva") || key.includes("orario")) {
+                                    // Strip the unwanted text from the value
+                                    const strippedValue = data.formData[key].value
+                                        .replace(/🍜/g, '') // Remove the 🍜 emoji
+                                        .replace(/✔/g, ''); // Remove the ✔ emoji
+
+                                    // Store the modified value back into the preserved data
+                                    preservedData.formData[key] = {
+                                        value: strippedValue,
+                                        color: data.formData[key].color // Keep the color
+                                    };
+                                }
+                            }
+                        }
+
+                        Object.keys(localStorage).forEach(function (key) {
+                            if (key.startsWith("fmData")) {
+                                localStorage.removeItem(key);
+                            }
+                        });
+
+                        localStorage.setItem("fmData", JSON.stringify(preservedData));
+                        updateTextAreas(preservedData.formData); // Update the UI as needed
+                    }
+
+                    // Close the dialog
+                    document.getElementById('confirmationDialog').style.display = 'none';
+                    clearLocalStorageExceptKey('fmData');
+                    location.reload(true);
+                };
+
+                document.getElementById('cancelButton').onclick = function () {
+                    // Close the dialog without doing anything
+                    document.getElementById('confirmationDialog').style.display = 'none';
+                };
+            }
+        }
+
+
+
+        // Function to update the textareas on the page
+        function updateTextAreas(formData) {
+            for (const key in formData) {
+                const textarea = document.getElementById(key);
+                if (textarea) {
+                    textarea.value = formData[key].value; // Restore the value
+                    textarea.style.backgroundColor = formData[key].color; // Restore the color if needed
+                }
+            }
+        }
+
+        function printSheet() {
+            window.print();
+        }
+
+
+        class CustomAlert {
+            constructor() {
+                this.modal = this.createModal();
+                document.body.appendChild(this.modal);
+            }
+
+            createModal() {
+                const modal = document.createElement("div");
+                modal.className = "myAlert-modal";
+
+                const modalContent = document.createElement("div");
+                modalContent.className = "myAlert-modal-content";
+                const message = document.createElement("p");
+
+                modalContent.appendChild(message);
+                modal.appendChild(modalContent);
+
+                return modal;
+            }
+
+            show(messageText) {
+                this.modal.querySelector("p").innerText = messageText;
+                this.modal.style.display = "block";
+
+                // Close the alert automatically after 1 second
+                setTimeout(() => {
+                    this.close();
+                }, 1000);
+            }
+
+            close() {
+                this.modal.style.display = "none";
+            }
+        }
+
+
+    </script>
+
+
+
+</body>
+
+</html>
